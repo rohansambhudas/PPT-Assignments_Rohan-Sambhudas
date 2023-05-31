@@ -16,8 +16,10 @@ function twoSum(nums, target) {
   
   for (let i = 0; i < nums.length; i++) {
     const complement = target - nums[i];
+    console.log(complement)
     
     if (map.has(complement)) {
+      // console.log(map.get(complement))
       return [map.get(complement), i];
     }
     
